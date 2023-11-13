@@ -11,18 +11,18 @@ def start_button(client):
         buttons = [
             [
                 InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-                InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close"),
+                InlineKeyboardButton(text="CLOSE", callback_data="close"),
             ],
         ]
         return buttons
     if not FORCE_SUB_CHANNEL and FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=client.invitelink2),
+                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink2),
             ],
             [
                 InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-                InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close"),
+                InlineKeyboardButton(text="CLOSE", callback_data="close"),
             ],
         ]
         return buttons
@@ -33,7 +33,7 @@ def start_button(client):
             ],
             [
                 InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-                InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close"),
+                InlineKeyboardButton(text="CLOSE", callback_data="close"),
             ],
         ]
         return buttons
@@ -44,9 +44,9 @@ def start_button(client):
             ],
             [
                 InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
-                InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=client.invitelink2),
+                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink2),
             ],
-            [InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close")],
+            [InlineKeyboardButton(text="CLOSE", callback_data="close")],
         ]
         return buttons
 
@@ -55,14 +55,14 @@ def fsub_button(client, message):
     if not FORCE_SUB_CHANNEL and FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink2),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink2),
             ],
         ]
         try:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="ᴄᴏʙᴀ ʟᴀɢɪ",
+                        text="TRY AGAIN",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
@@ -80,7 +80,7 @@ def fsub_button(client, message):
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="ᴄᴏʙᴀ ʟᴀɢɪ",
+                        text="TRY AGAIN",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
@@ -92,14 +92,14 @@ def fsub_button(client, message):
         buttons = [
             [
                 InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
-                InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink2),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink2),
             ],
         ]
         try:
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="ᴄᴏʙᴀ ʟᴀɢɪ",
+                        text="TRY AGAIN",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
