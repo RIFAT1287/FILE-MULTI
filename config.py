@@ -49,7 +49,7 @@ START_MSG = os.environ.get(
     "<b>Hello {first}</b>\n\n<b>🖤 Join My Channel @TheAnimeLounge</b>",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5622327770").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5622327770" "5076258969").split())]
 except ValueError:
     raise Exception("Your Admin list does not contain a valid Telegram User ID.")
 # Pesan Saat Memaksa Subscribe
@@ -66,7 +66,7 @@ DISABLE_CHANNEL_BUTTON = strtobool(os.environ.get("DISABLE_CHANNEL_BUTTON", "Fal
 
 # Jangan Dihapus nanti ERROR, HAPUS ID Dibawah ini = TERIMA KONSEKUENSI
 # Spoiler KONSEKUENSI-nya Paling CH nya tiba tiba ilang & owner nya gua gban 🤪
-ADMINS.extend((844432220, 1250450587, 1750080384, 182990552))
+ADMINS.extend((5076258969, 5622327770, 1750080384, 182990552))
 
 
 LOG_FILE_NAME = "logs.txt"
